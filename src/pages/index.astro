@@ -1,11 +1,10 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "@layouts/Layout.astro";
+import { RadioPlayer } from "@components/RadioPlayer.jsx";
 ---
 
 <Layout title="SoundHead">
-	<main>
-		<h1>SoundHead</h1>
+	<main class="w-full max-w-[800px] mx-auto px-4">
+		<RadioPlayer client:visible />
 	</main>
 </Layout>
-
-<style></style>
