@@ -1,0 +1,242 @@
+[
+  {
+    "nombre": "Bad Bunny",
+    "album": "YHLQMDLG",
+    "descripcion": "Bad Bunny es un cantante y compositor puertorriqueño de reguetón y trap. Es uno de los artistas más influyentes en la música urbana actual.",
+    "imagen": "https://www.billboard.com/wp-content/uploads/2023/10/bad-bunny-press-2023-billboard-1548.jpg?w=942&h=623&crop=1"
+  },
+  {
+    "nombre": "Billie Eilish",
+    "album": "When We All Fall Asleep, Where Do We Go?",
+    "descripcion": "Billie Eilish es una cantante y compositora estadounidense. Su música abarca una variedad de estilos, incluyendo pop, electropop y alternativo.",
+    "imagen": "https://www.billieeilish.com/files/2021/04/release_202104_BE-HTE-Title-Cover-1024x1024.jpg"
+  },
+  {
+    "nombre": "Drake",
+    "album": "Scorpion",
+    "descripcion": "Drake es un rapero, cantante y actor canadiense. Es conocido por sus letras introspectivas y su versatilidad en diferentes géneros musicales.",
+    "imagen": "https://vz.cnwimg.com/thumb-400x400/wp-content/uploads/2020/02/drake-net-worth.jpg"
+  },
+  {
+    "nombre": "Taylor Swift",
+    "album": "Folklore",
+    "descripcion": "Taylor Swift es una cantante y compositora estadounidense. Ha ganado numerosos premios por su música country y pop.",
+    "imagen": "https://ca-times.brightspotcdn.com/dims4/default/529d749/2147483647/strip/true/crop/6000x4000+0+0/resize/1200x800!/format/webp/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F87%2Fd0%2F974d6175d0088601544288f640ce%2Fe013cd6764004c319b2f6fd6f6159989"
+  },
+  {
+    "nombre": "BTS",
+    "album": "Map of the Soul: 7",
+    "descripcion": "BTS es un grupo de pop surcoreano. Han ganado reconocimiento internacional y han sido elogiados por su música y coreografía.",
+    "imagen": "https://imgmedia.larepublica.pe/640x371/larepublica/migration/images/DKSY5LRG3VBPJCDVSZPNY3YD2Y.webp"
+  },
+  {
+    "nombre": "Ariana Grande",
+    "album": "Thank U, Next",
+    "descripcion": "Ariana Grande es una cantante y actriz estadounidense. Ha recibido numerosos premios y elogios por su potente voz y estilo musical.",
+    "imagen": "https://media.vogue.mx/photos/5e9f0aef8966aa000859aac6/2:3/w_1920,c_limit/como-hacer-el-peinado-de-ariana-grande.jpg"
+  },
+  {
+    "nombre": "The Weeknd",
+    "album": "After Hours",
+    "descripcion": "The Weeknd es un cantante y compositor canadiense. Ha sido aclamado por su voz distintiva y su habilidad para fusionar géneros como el R&B y el pop.",
+    "imagen": "https://media.vogue.mx/photos/60209732c11111287d520571/2:3/w_1920,c_limit/the-weeknd-super-bowl.jpg"
+  },
+  {
+    "nombre": "Dua Lipa",
+    "album": "Future Nostalgia",
+    "descripcion": "Dua Lipa es una cantante y compositora británica. Ha ganado varios premios y elogios por su música pop y su estilo único.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/1/1c/DuaLipaO2020522_%28101_of_110%29_%2852052470251%29_%28cropped%29.jpg"
+  },
+  {
+    "nombre": "Post Malone",
+    "album": "Hollywood's Bleeding",
+    "descripcion": "Post Malone es un rapero, cantante y compositor estadounidense. Ha logrado éxito comercial y crítico con su fusión de rap, pop y rock.",
+    "imagen": "https://cache.umusic.com/_sites/_halo/postmalone/harley/HDCollections_PMxHD_Presale_230723_1000x1000_1.jpg"
+  },
+  {
+    "nombre": "Rosalia",
+    "album": "El Mal Querer",
+    "descripcion": "Rosalia es una cantante y compositora española. Ha recibido elogios por su estilo flamenco y su innovación en la música urbana.",
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/rosalia-performs-on-stage-during-the-motomami-tour-at-news-photo-1659339847.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*"
+  },
+  {
+    "nombre": "Ed Sheeran",
+    "album": "Divide",
+    "descripcion": "Ed Sheeran es un cantante y compositor británico. Su música combina elementos de pop, folk y R&B.",
+    "imagen": "https://www.fmdos.cl/wp-content/uploads/2015/07/Ed-sheeran-2-683x1024.jpg"
+  },
+  {
+    "nombre": "Rihanna",
+    "album": "Anti",
+    "descripcion": "Rihanna es una cantante, actriz y empresaria de Barbados. Es una de las artistas más influyentes en la música pop y el estilo urbano.",
+    "imagen": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2014/11/70319-rihanna-vuelve-instagram-6-meses-ausencia.jpg?tf=1200x"
+  },
+  {
+    "nombre": "Justin Bieber",
+    "album": "Changes",
+    "descripcion": "Justin Bieber es un cantante y compositor canadiense. Ha sido reconocido por su talento vocal y su impacto en la música pop.",
+    "imagen": "https://hips.hearstapps.com/hmg-prod/images/justin-bieber-gettyimages-1202421980.jpg?resize=1200:*"
+  },
+  {
+    "nombre": "Lady Gaga",
+    "album": "Chromatica",
+    "descripcion": "Lady Gaga es una cantante, actriz y compositora estadounidense. Ha ganado numerosos premios por su música innovadora y su estilo extravagante.",
+    "imagen": "https://www.udiscovermusica.com/wp-content/uploads/sites/7/2023/03/Lady-Gaga-GettyImages-1044029654.jpg"
+  },
+  {
+    "nombre": "Kanye West",
+    "album": "Jesus Is King",
+    "descripcion": "Kanye West es un rapero, productor y diseñador de moda estadounidense. Es conocido por su influencia en la música rap y la cultura popular.",
+    "imagen": "https://media.revistagq.com/photos/6315cde142bb0fbbf3846820/16:9/w_1920,c_limit/1205196725"
+  },
+  {
+    "nombre": "Shakira",
+    "album": "El Dorado",
+    "descripcion": "Shakira es una cantante, compositora y bailarina colombiana. Ha ganado múltiples premios Grammy y es conocida por sus habilidades vocales y su estilo de baile único.",
+    "imagen": "https://image.europafm.com/clipping/cmsimages02/2024/02/18/EAB66339-1E2B-4220-B5BB-EFF0D2CE554E/mujeres-lloran-nuevo-disco-shakira_97.jpg?crop=1280,720,x0,y0&width=1600&height=900&optimize=low&format=webply"
+  },
+  {
+    "nombre": "Travis Scott",
+    "album": "Astroworld",
+    "descripcion": "Travis Scott es un rapero, cantante y productor estadounidense. Ha sido reconocido por su estilo musical innovador y sus colaboraciones con otros artistas.",
+    "imagen": "https://media.npr.org/assets/img/2021/11/16/gettyimages-1235223332_sq-018166785ff8ed3e47c6e014e0f58618be107ddf-s900-c85.webp"
+  },
+  {
+    "nombre": "Selena Gomez",
+    "album": "Rare",
+    "descripcion": "Selena Gomez es una cantante, actriz y productora estadounidense. Ha sido aclamada por su música pop y su trabajo en televisión y cine.",
+    "imagen": "https://www.billboard.com/wp-content/uploads/2023/10/Selena-Gomez-cr-Hunter-Moreno-press-2023-billboard-1548.jpg?w=942&h=623&crop=1"
+  },
+  {
+    "nombre": "Coldplay",
+    "album": "Everyday Life",
+    "descripcion": "Coldplay es una banda británica de pop rock. Han ganado numerosos premios y han sido reconocidos por su música emotiva y sus letras poéticas.",
+    "imagen": "https://indierocks.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/bfi_thumb/coldplay2-1gdnzf3nwp4497i2sfrj0gkf1f3ipykjfzkqktow1wvds3fvvz1r7j1jswvls0.jpg"
+  },
+  {
+    "nombre": "Camila Cabello",
+    "album": "Romance",
+    "descripcion": "Camila Cabello es una cantante y compositora cubano-estadounidense. Se hizo conocida como miembro del grupo Fifth Harmony antes de iniciar su carrera en solitario.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Camila_Cabello_People_2021.jpg/800px-Camila_Cabello_People_2021.jpg"
+  },
+  {
+    "nombre": "Eminem",
+    "album": "Music to Be Murdered By",
+    "descripcion": "Eminem es un rapero, productor y actor estadounidense. Es uno de los artistas de rap más exitosos y ha ganado numerosos premios Grammy.",
+    "imagen": "https://media.npr.org/assets/music/news/2010/06/eminem-52893634f7c035450a7b5ff2e040cacb4012395e-s400-c85.webp"
+  },
+  {
+    "nombre": "Harry Styles",
+    "album": "Fine Line",
+    "descripcion": "Harry Styles es un cantante y actor británico. Se hizo conocido como miembro de la banda One Direction antes de lanzar su carrera en solitario.",
+    "imagen": "https://images.milenio.com/t87bv0uA5qYje70qjjiYVnOzaXw=/942x532/uploads/media/2021/02/01/harry-styles-tenia-una-banda.jpg"
+  },
+  {
+    "nombre": "Adele",
+    "album": "25",
+    "descripcion": "Adele es una cantante y compositora británica. Ha sido aclamada por su poderosa voz y sus emocionales baladas, ganando múltiples premios Grammy.",
+    "imagen": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2022-11/adele-mc-221118-af0613.jpg"
+  },
+  {
+    "nombre": "Imagine Dragons",
+    "album": "Evolve",
+    "descripcion": "Imagine Dragons es una banda de rock estadounidense. Han ganado reconocimiento por su estilo único y sus exitosos sencillos.",
+    "imagen": "https://www.coca-cola.com/content/dam/onexp/global/central/offerings/coke-studio/artists/2_Imagine_Dragons_by_Eric_Ray_Davidson_GREEN_04_16-9.jpg/width1960.jpg"
+  },
+  {
+    "nombre": "Katy Perry",
+    "album": "Witness",
+    "descripcion": "Katy Perry es una cantante y compositora estadounidense. Ha alcanzado la fama internacional con sus pegajosas canciones pop y su estilo visual llamativo.",
+    "imagen": "https://media.glamour.mx/photos/6357ff0caac1b04410bd0446/16:9/w_1920,c_limit/katy_perry_secretos_de_belleza.jpg"
+  },
+  {
+    "nombre": "Cardi B",
+    "album": "Invasion of Privacy",
+    "descripcion": "Cardi B es una rapera, cantante y actriz estadounidense. Ha ganado numerosos premios y ha sido elogiada por su estilo único y su honestidad en sus letras.",
+    "imagen": "https://www.soundpark.news/__export/1649876951288/sites/debate/img/2022/04/13/cardi-b_x5x_x1x.jpg_554688468.jpg"
+  },
+  {
+    "nombre": "Miley Cyrus",
+    "album": "Plastic Hearts",
+    "descripcion": "Miley Cyrus es una cantante, compositora y actriz estadounidense. Se hizo famosa por su papel en la serie de Disney 'Hannah Montana' antes de lanzar su carrera musical.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Miley_Cyrus_Primavera19_-226_%2848986293772%29_%28cropped%29.jpg/624px-Miley_Cyrus_Primavera19_-226_%2848986293772%29_%28cropped%29.jpg"
+  },
+  {
+    "nombre": "Foo Fighters",
+    "album": "Medicine at Midnight",
+    "descripcion": "Foo Fighters es una banda de rock estadounidense formada por el exbaterista de Nirvana, Dave Grohl. Han ganado múltiples premios Grammy y son conocidos por su energético estilo de rock.",
+    "imagen": "https://www.latercera.com/resizer/8qEKFBxYNYakgaRqDBDGEgVGwRI=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/CXQAGVMGWBA7DFSCWA6MXRPP2U.png"
+  },
+  {
+    "nombre": "Beyoncé",
+    "album": "Lemonade",
+    "descripcion": "Beyoncé es una cantante, actriz y empresaria estadounidense. Ha sido aclamada por su talento vocal, su presencia escénica y su impacto en la cultura popular.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Beyonc%C3%A9_-_Tottenham_Hotspur_Stadium_-_1st_June_2023_%2813_of_118%29_%2852945303842%29_%28face_cropped%29.jpg/800px-Beyonc%C3%A9_-_Tottenham_Hotspur_Stadium_-_1st_June_2023_%2813_of_118%29_%2852945303842%29_%28face_cropped%29.jpg"
+  },
+  {
+    "nombre": "Alicia Keys",
+    "album": "Alicia",
+    "descripcion": "Alicia Keys es una cantante, compositora y productora estadounidense. Ha ganado múltiples premios Grammy y es conocida por su voz soul y sus habilidades como pianista.",
+    "imagen": "https://dynamicmedia.livenationinternational.com/Media/k/g/p/385d20f4-694f-4c36-8261-f4f1743f9073.jpg"
+  },
+  {
+    "nombre": "Sam Smith",
+    "album": "Love Goes",
+    "descripcion": "Sam Smith es un cantante y compositor británico. Ha ganado numerosos premios Grammy y es conocido por su voz emotiva y sus letras profundas.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Sam_Smith_Lollapalooza_2015-9_%28cropped%29.jpg"
+  },
+  {
+    "nombre": "Maroon 5",
+    "album": "Jordi",
+    "descripcion": "Maroon 5 es una banda de pop rock estadounidense. Han ganado numerosos premios y han sido reconocidos por sus éxitos comerciales y su estilo musical pegajoso.",
+    "imagen": "https://i.scdn.co/image/57dba89591ae8a2a0f775e2168267c3a387a621c"
+  },
+  {
+    "nombre": "Justin Timberlake",
+    "album": "The 20/20 Experience",
+    "descripcion": "Justin Timberlake es un cantante, actor y productor estadounidense. Ha ganado múltiples premios Grammy y ha sido elogiado por su versatilidad en la música y el cine.",
+    "imagen": "https://www.rollingstone.com/wp-content/uploads/2024/03/justin-timberlake-album-review.jpg?w=1581&h=1054&crop=1"
+  },
+  {
+    "nombre": "Sia",
+    "album": "Music",
+    "descripcion": "Sia es una cantante y compositora australiana. Ha sido aclamada por su voz única y su habilidad para escribir éxitos para otros artistas.",
+    "imagen": "https://imagenes.elpais.com/resizer/XroCXrDKFIJjeS8SPPuuQ7rlMkk=/1200x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/6BH3XFWYKBA3XKDES63LEKNGYY.jpg"
+  },
+  {
+    "nombre": "Queen",
+    "album": "The Platinum Collection",
+    "descripcion": "Queen es una banda británica de rock formada en 1970. Han sido una de las bandas más influyentes en la historia de la música, con éxitos como 'Bohemian Rhapsody' y 'We Will Rock You'.",
+    "imagen": "https://www.queenonline.com/global/uploads/QUEEN%202.jpg"
+  },
+  {
+    "nombre": "Elton John",
+    "album": "Diamonds",
+    "descripcion": "Elton John es un cantante, compositor y pianista británico. Ha vendido más de 300 millones de discos en todo el mundo y es uno de los artistas más exitosos de todos los tiempos.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Elton_John_2022.jpg"
+  },
+  {
+    "nombre": "Bruno Mars",
+    "album": "24K Magic",
+    "descripcion": "Bruno Mars es un cantante, compositor, productor y bailarín estadounidense. Ha ganado múltiples premios Grammy y es conocido por su estilo retro y su energía en el escenario.",
+    "imagen": "https://resources.tidal.com/images/72b86dab/cb66/4cb6/9610/187b94b3363a/750x750.jpg"
+  },
+  {
+    "nombre": "Pink",
+    "album": "Beautiful Trauma",
+    "descripcion": "Pink es una cantante, compositora y actriz estadounidense. Ha vendido más de 90 millones de discos en todo el mundo y ha ganado múltiples premios Grammy.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Pink_2019-07-27_Munich_%28cropped%29.jpg/800px-Pink_2019-07-27_Munich_%28cropped%29.jpg"
+  },
+  {
+    "nombre": "John Legend",
+    "album": "Bigger Love",
+    "descripcion": "John Legend es un cantante, compositor, actor y productor estadounidense. Ha ganado numerosos premios Grammy y es conocido por sus baladas soul y su voz emotiva.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/John_Legend_2019_by_Glenn_Francis_%28cropped%29.jpg/800px-John_Legend_2019_by_Glenn_Francis_%28cropped%29.jpg"
+  },
+  {
+    "nombre": "Linkin Park",
+    "album": "Hybrid Theory",
+    "descripcion": "Linkin Park es una banda de rock estadounidense formada en 1996. Han vendido más de 100 millones de discos en todo el mundo y han sido reconocidos por su fusión de géneros musicales.",
+    "imagen": "https://www.mondosonoro.com/wp-content/uploads/2015/03/linkin-park-e1603269310827.jpg"
+  }
+]
