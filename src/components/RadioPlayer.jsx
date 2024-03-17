@@ -1,42 +1,23 @@
 import { useState, useRef, useEffect } from 'react'
 import { CardMusic } from '@components/CardMusic'
-import { ListResultSearch } from '@components/ListResultSearch'
-import { BtnSearch } from '@components/BtnSearch'
-import { BtnViewList } from '@components/BtnViewList'
 import { ListSongs } from '@components/ListSongs'
 import { SoundRange } from '@components/SoundRange'
+import { SkeletonLoader } from '@components/SkeletonLoader'
 
 export const RadioPlayer = () => {
   const [playlist, setPlaylist] = useState([])
   const [currentSong, setCurrentSong] = useState(null)
-  const [volume, setVolume] = useState(0.5)
-
-  const audioRef = useRef(null)
-
-  useEffect(() => {
-    if (currentSong) {
-      audioRef.current.src = currentSong.preview
-      audioRef.current.volume = volume
-      audioRef.current.play()
-    }
-  }, [currentSong])
-
-  useEffect(() => {
-    if (audioRef.current) {
-      audioRef.current.volume = volume
-    }
-  }, [volume])
-
-  const [songs, setSongs] = useState([])
+  const [volume, setVolume] = useState(0)
   const [loading, setLoading] = useState(false)
-  const [searchTerm, setSearchTerm] = useState('')
-  const [isListVisible, setIsListVisible] = useState(true)
+  const audioRef = useRef(null)
+  const [userInteracted, setUserInteracted] = useState(false)
 
-  const handleSearch = async () => {
-    const api = 'https://deezerdevs-deezer.p.rapidapi.com/search?q='
+  const getFirstSong = async () => {
+    const api = 'https://deezerdevs-deezer.p.rapidapi.com/playlist/'
+    const idPlaylist = '3338949242'
 
     setLoading(true)
-    const url = `${api}${searchTerm}`
+    const url = `${api}${idPlaylist}`
     const options = {
       method: 'GET',
       headers: {
@@ -46,31 +27,21 @@ export const RadioPlayer = () => {
     }
 
     try {
-      setLoading(true)
       const response = await fetch(url, options)
       const data = await response.json()
-      const songs = data.data || []
+      const songs = data.tracks.data || []
 
-      setSongs(songs)
+      if (songs.length > 0) {
+        setCurrentSong(songs[0])
+        setPlaylist(songs)
+        audioRef.current.src = songs[0].preview
+        audioRef.current.load()
+      }
+
+      setLoading(false)
     } catch (error) {
       console.error(error)
-    } finally {
       setLoading(false)
-    }
-  }
-
-  const handleToggleListVisibility = () => {
-    setIsListVisible(!isListVisible)
-  }
-
-  const handleAddSongToPlaylist = song => {
-    handleAddToPlaylist(song)
-  }
-
-  const handleAddToPlaylist = song => {
-    setPlaylist([...playlist, song])
-    if (!currentSong) {
-      setCurrentSong(song)
     }
   }
 
@@ -80,6 +51,8 @@ export const RadioPlayer = () => {
     if (currentIndex !== -1) {
       if (currentIndex < playlist.length - 1) {
         setCurrentSong(playlist[currentIndex + 1])
+        audioRef.current.src = playlist[currentIndex + 1].preview
+        audioRef.current.play().catch(error => console.error(error))
       } else {
         setCurrentSong(null)
       }
@@ -91,53 +64,55 @@ export const RadioPlayer = () => {
   }
 
   const handleVolumeChange = event => {
-    const newVolume = event.target.value
-    setVolume(newVolume)
+    const newVolume = parseFloat(event.target.value)
+    if (
+      !isNaN(newVolume) &&
+      isFinite(newVolume) &&
+      newVolume >= 0 &&
+      newVolume <= 1
+    ) {
+      setVolume(newVolume)
+      setUserInteracted(true)
+    }
   }
+
+  useEffect(() => {
+    getFirstSong()
+  }, [])
+
+  useEffect(() => {
+    if (userInteracted && currentSong) {
+      audioRef.current.play().catch(error => console.error(error))
+    }
+  }, [userInteracted, currentSong])
+
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.volume = volume
+    }
+  }, [volume])
 
   return (
     <>
-      <CardMusic
-        song={currentSong ? currentSong.title : ''}
-        artist={currentSong ? currentSong.artist : ''}
-        image={currentSong ? currentSong.album : ''}
-      />
+      <CardMusic song={currentSong} />
 
       <audio
         ref={audioRef}
         autoPlay
         className='w-full max-w-[260px] max-h-[600px] my-10 mx-auto rounded-3xl shadow-lg'
         onEnded={handleEnded}
+        onLoadStart={() => setLoading(true)}
+        onLoadedData={() => setLoading(false)}
+        onVolumeChange={handleVolumeChange}
       />
 
       <SoundRange volume={volume} handleVolumeChange={handleVolumeChange} />
 
-      <section className='py-10'>
-        <header className='flex flex-col gap-2'>
-          <input
-            type='text'
-            value={searchTerm}
-            onChange={e => setSearchTerm(e.target.value)}
-            placeholder='Ingresa el nombre de la canción o artista...'
-            className='w-full p-2 text-zinc-900 rounded-md border-2 border-gray-300 focus:outline-none focus:border-blue-500 transition duration-200'
-          />
-          <div className='mt-3 grid grid-cols-1 sm:grid-cols-3 gap-4 justify-between'>
-            <BtnSearch handleSearch={handleSearch} />
-            <BtnViewList
-              handleToggleListVisibility={handleToggleListVisibility}
-              isListVisible={isListVisible}
-            />
-          </div>
-        </header>
-        <ListResultSearch
-          loading={loading}
-          isListVisible={isListVisible}
-          songs={songs}
-          handleAddSongToPlaylist={handleAddSongToPlaylist}
-        />
-      </section>
-
-      <ListSongs songs={playlist} user='Daniel' />
+      {loading ? (
+        <SkeletonLoader loading={loading} />
+      ) : (
+        <ListSongs songs={playlist} />
+      )}
     </>
   )
 }

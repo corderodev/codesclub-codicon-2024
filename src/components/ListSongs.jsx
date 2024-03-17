@@ -1,4 +1,4 @@
-export const ListSongs = ({ songs, user }) => {
+export const ListSongs = ({ songs }) => {
   function formatDuration (durationInSeconds) {
     const minutes = Math.floor(durationInSeconds / 60)
     const seconds = durationInSeconds % 60
@@ -6,24 +6,39 @@ export const ListSongs = ({ songs, user }) => {
   }
 
   return (
-    <section>
-      <h2 className='text-3xl font-bold mb-4'>Lista de reproducción</h2>
+    <section className='mt-20'>
+      <h2 className='text-center text-3xl font-bold mb-4'>
+        Lista de reproducción
+      </h2>
       <ul>
         {songs.length === 0 ? (
-          <li className='text-gray-500'>No hay canciones en la lista</li>
+          <li className='text-gray-500 text-center'>
+            No hay canciones en la lista
+          </li>
         ) : (
           songs.map((song, index) => (
             <li
               key={index}
-              className='my-10 pb-4 flex flex-wrap items-center justify-between gap-10 border-b border-zinc-800/80 overflow-hidden'
+              className='w-full max-w-[600px] mx-auto my-10 pb-4 flex flex-wrap gap-10 border-b border-zinc-800/80 overflow-hidden'
             >
-              <div className='flex flex-wrap gap-6'>
-                <p className='truncate'>
-                  {song.title} - {song.artist.name}
-                </p>
-                <time>{formatDuration(song.duration)}</time>
+              <div className='w-full flex flex-wrap items-center justify-between gap-6'>
+                <div className="flex gap-10 items-center">
+                  <img
+                    src={song.album.cover_medium}
+                    alt={song.title}
+                    className='aspect-square w-12'
+                  />
+                  <a
+                    href={song.link}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='w-full truncate hover:underline'
+                  >
+                    {song.title} - {song.artist.name}
+                  </a>
+                </div>
+                <time className="hidden sm:block">{formatDuration(song.duration)}</time>
               </div>
-              <p>{user}</p>
             </li>
           ))
         )}
