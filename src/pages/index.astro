@@ -1,10 +1,156 @@
 ---
-import Layout from "@layouts/Layout.astro";
-import { RadioPlayer } from "@components/RadioPlayer.jsx";
+import LayoutHome from "@layouts/LayoutHome.astro";
 ---
 
-<Layout title="SoundHead">
+<LayoutHome title="SoundHead - Inicio">
 	<main class="w-full max-w-[800px] mx-auto px-4">
-		<RadioPlayer client:visible />
+		<section class="seccion1">
+			<div class="navbar">
+				<div class="navbar-left">
+					<a href="/" class="active">Inicio</a>
+					<a href="/artists">Artistas</a>
+					<a href="/new-releases">Nuevos Lanzamientos</a>
+					<a href="/plans">Planes</a>
+				</div>
+			</div>
+		</section>
+		<section class="social">
+			<ul class="example-2">
+				<li class="icon-content">
+					<a
+						data-social="Instagram"
+						aria-label="Instagram"
+						href="https://www.spotify.com/"
+					>
+						<div class="filled"></div>
+						<!--?xml version="1.0" ?-->
+						<svg
+							class="feather feather-instagram"
+							fill="none"
+							height="24"
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							width="24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
+							<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+							<line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+						</svg>
+					</a>
+					<div class="tooltip">Instagram</div>
+				</li>
+				<li class="icon-content">
+					<a
+						data-social="Twitter"
+						aria-label="Twitter"
+						href="https://www.pinterest.com/"
+					>
+						<div class="filled"></div>
+						<!--?xml version="1.0" ?-->
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="1200"
+							height="1227"
+							viewBox="0 0 1200 1227"
+							fill="none"
+						>
+							<g clip-path="url(#clip0_1_2)">
+								<path
+									d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"
+									fill="black"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_1_2">
+									<rect width="1200" height="1227" fill="white"></rect>
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+					<div class="tooltip">Twitter</div>
+				</li>
+				<li class="icon-content">
+					<a
+						data-social="Facebook"
+						aria-label="Facebook"
+						href="https://dribbble.com/"
+					>
+						<div class="filled"></div>
+						<!--?xml version="1.0" ?-->
+						<svg
+							class="feather feather-facebook"
+							fill="none"
+							height="24"
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							width="24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+							></path>
+						</svg>
+					</a>
+					<div class="tooltip">Facebook</div>
+				</li>
+				<li class="icon-content">
+					<a
+						data-social="Gmail"
+						aria-label="Gmail"
+						href="https://telegram.org/"
+					>
+						<div class="filled"></div>
+						<!--?xml version="1.0" ?-->
+						<svg
+							enable-background="new 0 0 32 32"
+							height="32px"
+							version="1.1"
+							viewBox="0 0 32 32"
+							width="32px"
+							xml:space="preserve"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+						>
+							<g id="Gmail">
+								<path
+									d="M27,27c-0.276,0-0.5-0.224-0.5-0.5v-13c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v13   C27.5,26.776,27.276,27,27,27z"
+									fill="#263238"></path>
+								<path
+									d="M5,27c-0.276,0-0.5-0.224-0.5-0.5v-13C4.5,13.224,4.724,13,5,13s0.5,0.224,0.5,0.5v13   C5.5,26.776,5.276,27,5,27z"
+									fill="#263238"></path>
+								<g>
+									<path
+										d="M16,14.432c-0.099,0-0.197-0.029-0.282-0.087L3.553,6.021c-0.228-0.156-0.286-0.467-0.13-0.695    c0.156-0.228,0.466-0.287,0.695-0.13L16,13.326l8.958-6.129c0.229-0.156,0.54-0.097,0.695,0.13    c0.156,0.228,0.098,0.539-0.13,0.695l-9.24,6.322C16.197,14.403,16.099,14.432,16,14.432z"
+										fill="#263238"></path>
+								</g>
+								<g>
+									<path
+										d="M28.5,27h-25C2.122,27,1,25.878,1,24.5v-17C1,7.224,1.224,7,1.5,7S2,7.224,2,7.5v17    C2,25.327,2.673,26,3.5,26h25c0.827,0,1.5-0.673,1.5-1.5v-17C30,6.673,29.327,6,28.5,6C28.224,6,28,5.776,28,5.5S28.224,5,28.5,5    C29.878,5,31,6.122,31,7.5v17C31,25.878,29.878,27,28.5,27z"
+										fill="#263238"></path>
+								</g>
+								<g>
+									<path
+										d="M16,19c-0.099,0-0.198-0.029-0.284-0.088L2.066,9.498C1.398,9.038,1,8.278,1,7.467    C1,6.107,2.107,5,3.467,5h25.065C29.893,5,31,6.107,31,7.467c0,0.811-0.398,1.57-1.066,2.031l-13.65,9.414    C16.198,18.971,16.099,19,16,19z M3.467,6C2.658,6,2,6.658,2,7.467C2,7.95,2.237,8.401,2.634,8.675L16,17.893l13.366-9.218    C29.763,8.401,30,7.95,30,7.467C30,6.658,29.342,6,28.533,6H3.467z"
+										fill="#263238"></path>
+								</g>
+							</g>
+						</svg>
+					</a>
+					<div class="tooltip">Gmail</div>
+				</li>
+			</ul>
+		</section>
+		<section class="seccion2">
+			<video src="../../public/video.mp4" autoplay loop muted
+			></video>
+		</section>
+
+		<footer class="pie"></footer>
 	</main>
-</Layout>
+</LayoutH>
