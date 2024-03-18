@@ -4,7 +4,7 @@ import { ListSongs } from '@components/ListSongs'
 import { SoundRange } from '@components/SoundRange'
 import { SkeletonLoader } from '@components/SkeletonLoader'
 
-export const RadioPlayer = () => {
+export const RadioPlayer = ({idPlaylist}) => {
   const [playlist, setPlaylist] = useState([])
   const [currentSong, setCurrentSong] = useState(null)
   const [volume, setVolume] = useState(0)
@@ -14,7 +14,6 @@ export const RadioPlayer = () => {
 
   const getFirstSong = async () => {
     const api = 'https://deezerdevs-deezer.p.rapidapi.com/playlist/'
-    const idPlaylist = '3338949242'
 
     setLoading(true)
     const url = `${api}${idPlaylist}`
